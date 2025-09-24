@@ -23,11 +23,7 @@ namespace BasicThreading
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void FrmBasicThread_Load(object sender, EventArgs e)
-        {
+            
             ThreadA = new Thread(MyThreadClass.Thread1);
             ThreadB = new Thread(MyThreadClass.Thread1);
 
@@ -41,7 +37,13 @@ namespace BasicThreading
             ThreadA.Join();
             ThreadB.Join();
 
-            label1.Text = "- End Of Thread -";
+            ThreadState.Text = "       - End Of Thread -";
+
+        }
+
+        private void FrmBasicThread_Load(object sender, EventArgs e)
+        {
+           
         }
     }
 }

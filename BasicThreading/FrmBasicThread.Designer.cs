@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.ThreadState = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // ThreadState
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Ebrima", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(65, 84);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(470, 50);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "- Before Starting Thread -";
+            this.ThreadState.AutoSize = true;
+            this.ThreadState.Font = new System.Drawing.Font("Ebrima", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ThreadState.Location = new System.Drawing.Point(65, 84);
+            this.ThreadState.Name = "ThreadState";
+            this.ThreadState.Size = new System.Drawing.Size(470, 50);
+            this.ThreadState.TabIndex = 0;
+            this.ThreadState.Text = "- Before Starting Thread -";
             // 
             // button1
             // 
@@ -59,9 +59,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(590, 356);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ThreadState);
             this.Name = "FrmBasicThread";
             this.Text = "FrmBasicThread";
+            this.Load += new System.EventHandler(this.FrmBasicThread_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -69,7 +70,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label ThreadState;
         private System.Windows.Forms.Button button1;
     }
 }
