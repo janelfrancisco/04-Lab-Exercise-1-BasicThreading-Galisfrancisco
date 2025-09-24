@@ -37,7 +37,11 @@ namespace BasicThreading
             ThreadA.Start();
             ThreadB.Start();
 
-            
+            // 5. Use the Join() method to stop a calling thread until the thread terminates
+            ThreadA.Join();
+            ThreadB.Join();
+
+            label1.Text = "- End Of Thread -";
         }
     }
 }
