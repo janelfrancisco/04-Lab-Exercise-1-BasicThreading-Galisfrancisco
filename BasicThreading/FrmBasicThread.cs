@@ -37,13 +37,19 @@ namespace BasicThreading
             ThreadA.Join();
             ThreadB.Join();
 
-            ThreadState.Text = "       - End Of Thread -";
+            lbl_ThreadState.Text = "       - End Of Thread -";
 
         }
 
         private void FrmBasicThread_Load(object sender, EventArgs e)
         {
            
+
+        }
+
+        private void ThreadState_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
