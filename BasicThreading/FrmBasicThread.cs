@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace BasicThreading
 {
-    public partial class BasicThread : Form
+    public partial class FrmBasicThread : Form
     {
-        public BasicThread()
+        public FrmBasicThread()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
